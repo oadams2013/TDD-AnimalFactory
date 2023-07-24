@@ -31,4 +31,26 @@ public class DogHouseTest {
         // Then
         DogHouse.getNumberOfDogs();
     }
+    @Test
+    public void addDogTest(){
+        Dog dog = new Dog("Fido", new Date(07-16-2023), 1234);
+        DogHouse.add(dog);
+    }
+    @Test
+    public void removeDogTest(){
+        Dog dog = new Dog("Fido", new Date(07-16-2023), 1234);
+        DogHouse.remove(dog);
+    }
+    @Test
+    public void remove(){
+        Dog dog = new Dog("Fido", new Date(07-16-2023), 1234);
+        Integer id = 5678;
+        DogHouse.remove(id);
+    }
+    @Test
+    public void getDogById(){
+        Dog dog = new Dog("Fido", new Date(07-16-2023), 1234);
+        Integer id = 5678;
+        DogHouse.getDogById(id);
+    }
 }
